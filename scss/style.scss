@@ -1,0 +1,312 @@
+@import 'variables';
+@import 'fonts';
+@import 'mixins';
+
+// Prevent transition on page load
+.preload,
+.preload * {
+	transition: none !important;
+}
+
+html * {
+	transition: ease-in-out 1s;
+}
+
+body {
+	background-color: $light-background;
+	font-family     : Poppins, sans-serif;
+	box-sizing      : border-box;
+}
+
+main {
+	margin: auto;
+	width : 375px;
+}
+
+section {
+	border-radius: 8px;
+
+	&:not(:last-of-type) {
+		margin-bottom: 24px;
+	}
+}
+
+footer {
+	margin    : 32px 0;
+	font-size : 1rem;
+	text-align: center;
+}
+
+footer a {
+	color: hsl(228, 45%, 44%);
+}
+
+/* Top section*/
+
+#calc__top {
+	align-items    : center;
+	justify-content: space-between;
+}
+
+#theme {
+	p {
+		text-transform: uppercase;
+		margin        : 0 32px 0.5rem 0;
+		align-self    : flex-end;
+	}
+
+}
+
+#theme_slider {
+	position: relative;
+	height  : 32px;
+	width   : 104px;
+}
+
+#theme_label {
+	justify-content: space-between;
+
+	p {
+		margin: auto
+	}
+}
+
+#theme_hitbox {
+	position: absolute;
+	left    : 4px;
+	z-index : 9;
+}
+
+#theme_selector {
+	position: absolute;
+	z-index : 1;
+	height  : 32px;
+	width   : 100%;
+
+	background-color: $light-background-darken;
+	border-radius   : 16px;
+}
+
+#theme_indicator {
+	position: relative;
+	left    : 0%;
+
+	margin          : 4px;
+	height          : 24px;
+	width           : 24px;
+	border-radius   : 50%;
+	background-color: $light-accent;
+
+	transition: ease-in 0.4s;
+}
+
+.themeSwitch {
+
+	width : 32px;
+	height: 32px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+/* Middle section*/
+
+#calc__screen {
+	background-color: $light-background-lighten;
+	padding         : 24px;
+	text-align      : right;
+
+	span {
+		font-size  : 3rem;
+		line-height: 1em;
+		font-weight: bold;
+	}
+}
+
+#calc__inputs {
+	background-color     : $light-background-darken;
+	grid-template-columns: repeat(4, 1fr);
+	text-align           : center;
+	column-gap           : 16px;
+	row-gap              : 16px;
+	padding              : 32px;
+
+	button {
+		@include button-reset;
+
+		transition: ease-out 0.2s;
+
+		font-family: Poppins, sans-serif;
+		font-weight: bold;
+		font-size  : 1.5rem;
+
+		height: 64px;
+		margin: 0;
+
+		border-radius   : 8px;
+		background-color: $light-button;
+
+		box-shadow: 0 4px darken($light-button, 12);
+
+		&.secondary,
+		&.accent {
+			color: #fff;
+		}
+
+		&.secondary {
+			background-color: $light-secondary;
+			box-shadow: 0 4px darken($light-secondary, 12);
+		}
+
+		&.accent {
+			background-color: $light-accent;
+			box-shadow: 0 4px darken($light-accent, 12);
+		}
+
+		p {
+			margin: 0;
+		}
+
+		&:active {
+			box-shadow: none;
+			transform : translateY(4px);
+		}
+	}
+}
+
+/* Bottom section */
+
+/*** Display system ***/
+
+.flex {
+	display: flex;
+
+}
+
+.grid_container {
+	display: grid;
+
+	.col2 {
+		grid-column: span 2;
+	}
+}
+
+.fixed {
+	position: fixed;
+}
+
+.horizontal {
+	flex-direction: row;
+}
+
+/* Dark theme values */
+
+body.dark {
+	background-color: $dark-background;
+	color           : $dark-font;
+
+	#theme_selector {
+		background-color: $dark-background-darken;
+	}
+
+	#theme_indicator {
+		left            : 36px;
+		background-color: $dark-accent;
+	}
+
+	#calc__screen {
+		background-color: $dark-background-screen;
+	}
+
+	#calc__inputs {
+		background-color: $dark-background-darken;
+
+		button {
+
+			background-color: $light-button;
+
+			box-shadow: 0 4px darken($light-button, 12);
+
+			color: $dark-background;
+			font-family: Poppins, sans-serif;
+			font-weight: bold;
+			font-size  : 1.5rem;
+
+			&.secondary,
+			&.accent {
+				color: #fff;
+			}
+
+			&.secondary {
+				background-color: $dark-secondary;
+				box-shadow: 0 4px darken($dark-secondary, 12);
+			}
+
+			&.accent {
+				background-color: $dark-accent;
+				box-shadow: 0 4px darken($dark-accent, 12);
+			}
+
+			&:active {
+				box-shadow: none;
+				transform : translateY(4px);
+			}
+		}
+	}
+}
+
+/* Other theme values */
+
+body.other {
+	background-color: $other-background;
+	color           : $other-font;
+
+	#theme_selector {
+		background-color: $other-background-lighten;
+	}
+
+	#theme_indicator {
+		left            : 72px;
+		background-color: $other-accent;
+	}
+
+	#calc__screen{
+		background-color: $other-background-lighten;
+	}
+
+	#calc__inputs {
+		background-color: $other-background-lighten;
+
+		button {
+
+			background-color: $other-button;
+
+			box-shadow: 0 4px lighten($other-button, 24);
+
+			color: $other-font;
+			font-family: Poppins, sans-serif;
+			font-weight: bold;
+			font-size  : 1.5rem;
+
+			&.secondary {
+
+				color: #fff;
+				background-color: $other-secondary;
+				box-shadow: 0 4px lighten($other-secondary, 24);
+			}
+
+			&.accent {
+
+				color: #000;
+				background-color: $other-accent;
+				box-shadow: 0 4px lighten($other-accent, 24);
+			}
+
+			&:active {
+				box-shadow: none;
+				transform : translateY(4px);
+			}
+		}
+	}
+}

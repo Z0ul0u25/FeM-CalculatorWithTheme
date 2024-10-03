@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <script src="./js/script.js" defer></script>
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+
+<body class="preload">
+  <main>
+    <section id="calc__top" class="flex">
+      <h1>Calc</h1>
+      <div id="theme" class="flex horizontal">
+        <p>Theme</p>
+        <div>
+          <div id="theme_label" class="flex">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+          </div>
+          <div id="theme_slider">
+            <div id="theme_hitbox" class="flex">
+              <div id="light" class="themeSwitch"></div>
+              <div id="dark" class="themeSwitch"></div>
+              <div id="other" class="themeSwitch"></div>
+              <!-- <div id="egg" class="themeSwitch"></div> -->
+            </div>
+            <div id="theme_selector" class="flex">
+              <div id="theme_indicator"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="calc__screen">
+      <span id="screen">0</span>
+    </section>
+    <section id="calc__inputs" class="grid_container">
+      <button><p>7</p></button>
+      <button><p>8</p></button>
+      <button><p>9</p></button>
+      <button class="secondary"><p>DEL</p></button>
+      <button><p>4</p></button>
+      <button><p>5</p></button>
+      <button><p>6</p></button>
+      <button><p>+</p></button>
+      <button><p>1</p></button>
+      <button><p>2</p></button>
+      <button><p>3</p></button>
+      <button><p>-</p></button>
+      <button><p>.</p></button>
+      <button><p>0</p></button>
+      <button><p>&div;</p></button>
+      <button><p>x</p></button>
+      <button class="col2 secondary"><p>RESET</p></button>
+      <button class="col2 accent"><p>=</p></button>
+    </section>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Z0ul0u25">Philippe&nbsp;G</a>.
+  </footer>
+</body>
+
+</html>

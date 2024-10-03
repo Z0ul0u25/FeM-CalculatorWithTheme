@@ -1,0 +1,26 @@
+$light-background: #e6e6e6;
+$dark-background : #3b4664;
+$other-background: #17062a;
+
+$light-font: #000;
+$dark-font : #fff;
+$other-font: #ffe533;
+
+$light-secondary: #388186;
+$dark-secondary: #647298;
+$other-secondary: #580778;
+
+$light-accent: #c85401;
+$dark-accent : #d13f30;
+$other-accent: #00decf;
+
+$light-background-darken : #d3cdcd;
+$dark-background-darken  : #252d44;
+
+$light-background-lighten : #eeeeee;
+$dark-background-screen: #181f32;
+$other-background-lighten : lighten($other-background, 4);
+
+$light-button:#e5e4e0;
+$dark-button: #eae2db;
+$other-button: #331b4d;
