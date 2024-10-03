@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/a-calculator-that-remember-your-prefered-theme-SLwbsXG1Rp)
-- Live Site URL: [Add live site URL here](https://z0ul0u25.github.io/FeM-CalculatorWithTheme/)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/a-calculator-that-remember-your-prefered-theme-SLwbsXG1Rp)
+- Live Site URL: [Github Pages](https://z0ul0u25.github.io/FeM-CalculatorWithTheme/)
 
 ## My process
 
