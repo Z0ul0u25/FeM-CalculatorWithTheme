@@ -5,17 +5,17 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 ## Table of contents
 
 - [Frontend Mentor - Calculator app solution](#frontend-mentor---calculator-app-solution)
-  - [Table of contents](#table-of-contents)
-  - [Overview](#overview)
-    - [The challenge](#the-challenge)
-    - [Screenshot](#screenshot)
-    - [Links](#links)
-  - [My process](#my-process)
-    - [Built with](#built-with)
-    - [What I learned](#what-i-learned)
-    - [Continued development](#continued-development)
-  - [Author](#author)
-  - [Acknowledgments](#acknowledgments)
+	- [Table of contents](#table-of-contents)
+	- [Overview](#overview)
+		- [The challenge](#the-challenge)
+		- [Screenshot](#screenshot)
+		- [Links](#links)
+	- [My process](#my-process)
+		- [Built with](#built-with)
+		- [What I learned](#what-i-learned)
+		- [Continued development](#continued-development)
+	- [Author](#author)
+	- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://#)
-- Live Site URL: [Add live site URL here](https://#)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/a-calculator-that-remember-your-prefered-theme-SLwbsXG1Rp)
+- Live Site URL: [Add live site URL here](https://z0ul0u25.github.io/FeM-CalculatorWithTheme/)
 
 ## My process
 
